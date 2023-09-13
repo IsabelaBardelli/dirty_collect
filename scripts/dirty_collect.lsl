@@ -105,6 +105,7 @@ default
     {
         if (change & CHANGED_INVENTORY) 
         {
+            iLine = 0;
             key nc_key = llGetInventoryKey(NOTECARD_NAME);
             if (nc_key != NULL_KEY) kQuery = llGetNotecardLine(NOTECARD_NAME, iLine);
             reset();
